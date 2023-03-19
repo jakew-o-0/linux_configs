@@ -1,0 +1,44 @@
+font:
+  normal:
+    family: creep
+    style: regular
+
+
+window:
+  dimensions:
+    columns: 100
+    lines: 50
+  dynamic_padding: true
+  opacity: 0.9
+
+
+colors:
+  primary:
+    background: '#111111'
+    foreground: '#abc0c5'
+
+  cursor:
+    text: '#000000'
+    cursor: '#abc0c5'
+
+  normal:
+    black:   '#222222'
+    red:     '#8b5c51'
+    green:   '#5c8676'
+    yellow:  '#a29076'
+    blue:    '#4f8396'
+    magenta: '#776e89'
+    cyan:    '#5a7588'
+    white:   '#abc0c5'
+
+  bright:
+    black:   '#444444'
+    red:     '#8b5c51'
+    green:   '#9fafaf'
+    yellow:  '#a29076'
+    blue:    '#4f8396'
+    magenta: '#776e89'
+    cyan:    '#5a7588'
+    white:   '#abc0c5'
+
+  background_opacity: 0.9

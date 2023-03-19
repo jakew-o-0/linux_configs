@@ -1,0 +1,30 @@
+#!/bin/bash
+xsetroot -cursor_name left_ptr
+sxhkd &
+/home/jake/code/bash/randWallppr
+picom &
+
+polybar bdate &
+sleep 1
+polybar workSpaces &
+
+ 
+bspc monitor -d 1 2 3 4
+
+bspc config border_width	1
+bspc config top_padding		22
+ 
+bspc config split_ratio		0.5
+bspc config pointer_modifier	mod1
+
+# Mice bindings
+#   Set mouse 1 to move floating windows
+bspc config pointer_action1 move
+
+#   Mouse 2 button resizes the window by side
+bspc config pointer_action2 resize_side
+
+#   Mouse 3 button (right mouse) resize by corner
+bspc config pointer_action2 resize_corner
+
+ 

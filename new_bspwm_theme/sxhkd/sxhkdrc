@@ -1,0 +1,68 @@
+#xhkd reload its configuration files
+super + Escape
+	pkill -USR1 -x sxhkd
+ 
+# quit or restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+
+
+
+ 
+# create a new terminal window or swap the current one to the biggest one in the screen 
+super + {_,shift + }Return
+	{alacritty, bspc node -s biggest.local}
+
+super + r
+	rofi -show drun
+ 
+# close or kill a window
+super + {_,shift + }c
+	bspc node -{k,c}
+ 
+# change the window state
+super + {t,ctrl + t,l,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+
+
+
+ 
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+ 
+
+super + alt + shift + {h,j,k,l}
+	bspc node -z {left 20 0,bottom 0 -20,top 0 20,right -20 0}
+
+# focus or send a window to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+# move a floating window
+super + shift + {h,j,k,l}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
+
+
+#focus next window
+super + j
+	bspc node -f next.local.window
+
+#change wallpaper
+super + w
+	/home/jake/code/bash/randWallppr
+
+
+#mini windows
+super + m
+	bspc config left_padding 650 && bspc config right_padding 650 && bspc config top_padding 100 && bspc config bottom_padding 100
+
+#normal windows
+super + shift + m
+	bspc config left_padding 0 && bspc config right_padding 0 && bspc config top_padding 20 && bspc config bottom_padding 0
