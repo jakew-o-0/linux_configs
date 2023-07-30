@@ -12,4 +12,3 @@ v() {
 	nvim .
 }
 PS1='[\u@\h \W]\$ '
-. "$HOME/.cargo/env"
