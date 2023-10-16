@@ -1,14 +1,31 @@
 # linux_configs
 collection of linux configuration files
 
-updating arch mkpkg.conf for better preformance:
-- install:
-    - mould linker
-    - pigz
-    - pbzip2
-    - lbzip2
-    - plzip
+Desktop installation:
+- installs:
+    - hyprland
+    - hyprpaper
+    - kitty
+    - rofi-wayland
+    - cascaydiacode nerd font
 
-OLD nvim configs
-- install packer 
-- install node js for coc
+- updating arch mkpkg.conf for better preformance:
+    - install:
+        - mould linker
+        - pigz
+        - pbzip2
+        - lbzip2
+        - plzip
+
+
+
+Worstation installation:
+- requires yay
+- installs: 
+    - nvim 
+    - tmux
+    - zsh
+    - starship
+    - zsh
+    - zsh-autosuggestions
+    - zsh-syntax-highlighting

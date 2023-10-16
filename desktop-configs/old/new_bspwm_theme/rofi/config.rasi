@@ -1,4 +1,0 @@
-configuration{
-	font: "creep 10";
-}
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
