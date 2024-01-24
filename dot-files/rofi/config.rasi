@@ -10,7 +10,7 @@ configuration {
 	show-icons: true;
 		icon-theme: "Papirus";
 	location: 0;
-	font: "firacode 12";	
+	font: "MartianMono NF 12";	
 	display-drun: "Launch:";
 }
 

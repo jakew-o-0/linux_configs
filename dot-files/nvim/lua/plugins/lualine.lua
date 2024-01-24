@@ -3,7 +3,6 @@ return {
 	opts = {
 		options = {
 			icons_enabled = false,
-			theme = 'kanagawa-wave',
 			component_separators = '|',
 			section_separators = '',
 		},
