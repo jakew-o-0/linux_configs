@@ -1,24 +1,31 @@
 @theme "/dev/null"
 
 * {
-	bg: #1F1F2899;
-	background-color: @bg;
+	bg: #161621cc;
+	bgAlt: #1f1f28cc;
+    txt: #dcd7ba;
+    bordr: #dcd7bacc;
+
+	background-color: @bgAlt;
 }
 
 
 configuration {
 	show-icons: true;
-		icon-theme: "Papirus";
+    icon-theme: "Papirus";
 	location: 0;
-	font: "MartianMono NF 12";	
+	font: "MartianMonoNF 14";	
 	display-drun: "Launch:";
 }
 
 window { 
-	width: 21%;
+	width: 30%;
 	transparency: "real";
 	orientation: vertical;
-	border-color: #74adc0;
+
+	border-color: @bordr;
+    border: 2;
+    border-radius: 5;
 }
 
 mainbox {
@@ -31,11 +38,16 @@ mainbox {
 
 element {
 	padding: 4 12;
-	text-color: #DCD7BA;
+	text-color: @txt;
+    background-color: @bg;
 }
 
 element selected {
-	background-color: #7E9CD8;
+	background-color: @bgAlt;
+    text-color: @txt;
+	border-color: @bordr;
+    border: 1;
+    border-radius: 5;
 }
 
 element-text {
@@ -44,7 +56,7 @@ element-text {
 }
 
 element-icon {
-	size: 16 px;
+	size: 32px;
 	background-color: inherit;
 	padding: 0 6 0 0;
 	alignment: vertical;
@@ -64,14 +76,16 @@ listview {
 //------------------------------------------------
 
 entry {
-	text-color: #DCD7BA;
-	padding: 10 10 0 0;
-	margin: 0 -2 0 0;
+	text-color: @txt;
+    background-color: @bg;
+	padding: 4 10 4 4;
+	margin: 10 -2 0 0;
 }
 
 
 prompt {
-	text-color: #7E9CD8;
-	padding: 10 6 0 10;
-	margin: 0 -2 0 0;
+	text-color: #98bb6c;
+    background-color: @bg;
+	padding: 4 6 4 4;
+	margin: 10 -2 0 8;
 }
